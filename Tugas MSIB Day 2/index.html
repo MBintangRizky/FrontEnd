@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <title>Restoran Fitfut</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav id="navbar">
+            <div id="nav-img">
+                <img src="./assets/img/logo.png" alt="Serasa Logo" id="nav-logo" width="50">
+            </div>
+            <div class="nav-link">
+                <a href="#welcome" class="active">Beranda</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#contact">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-container">
+        
+        <section>
+            <h2 id="welcome">Selamat Datang di Fitfut</h2>
+            <p id="welcome-desc">Andalan Restoran Keluarga Indonesia</p>
+        
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">Special</span>
+                <h2 class="section-title">Menu Andalan Kami</h2>
+                
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/plate1.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Salad Sayur</h3>
+                        <span class="menu__detail">Makanan lezat dan menyehatkan</span>
+                        <span class="menu__preci">Rp.45.000,00</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/plate2.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Salad Ikan Tuna</h3>
+                        <span class="menu__detail">Makanan lezat dan menyehatkan</span>
+                        <span class="menu__preci">Rp.75.000,00</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/plate3.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Salad Bayam</h3>
+                        <span class="menu__detail">Makanan lezat dan menyehatkan</span>
+                        <span class="menu__preci">Rp.40.000,00</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/juice.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">Smoothie Kiwi</h3>
+                        <span class="menu__detail">Minuman lezat</span>
+                        <span class="menu__preci">Rp.25.000,00</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">Tentang Kami</span>
+                        <h2 class="section-title about__initial">Kami mengedepankan cita rasa</h2>
+                        <p class="about__description">Kami berkomitmen menyajikan layanan terbaik kepada pelanggan sambil tetap menjamin kelezatan hidangan dengan cita rasa Indonesia.</p>
+                        <a href="#" class="button" style="text-decoration: none;">Sambutan Owner Fitfut</a>
+                    </div>
+
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                </div>
+            </section>
+
+            <section class="contact section bd-container" id="contact">
+                <span class="section-subtitle">Ada pertanyaan?</span>
+                <h2 class="section-title">Hubungi Kami</h2>
+                
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name" required>
+            
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="message">Pesan:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+            
+                        <button type="submit" class="button">Kirim Pesan</button>
+                    </form>
+                </div>
+        
+        </section>
+
+        <aside>
+            <h3>Penawaran Terbaik</h3>
+            <p>Menu spesial untuk hari ini:</p>
+           
+                <div class="menu__content" style="margin-top: 1em;">
+                    <img src="assets/img/plate1.png" alt="" class="menu__img">
+                    <div>
+                        <h3 class="menu__name">Salad Sayur</h3>
+                        <a href="#" class="button__aside menu__button"><i class='bx bx-cart-alt'></i></a>
+                       
+                    </div>
+                </div>  
+
+                <div class="menu__content" style="margin-top: 1em;">
+                    <img src="assets/img/juice.jpg" alt="" class="menu__img">
+                    <div>
+                        <h3 class="menu__name">Smoothie Kiwi</h3>
+                        <a href="#" class="button__aside menu__button"><i class='bx bx-cart-alt'></i></a>
+                  
+                    </div>
+               
+                </div>
+              
+            
+        </aside>
+    </main>
+
+    
+    
+    <footer>
+        <div class="footer-wrapper">
+          <div class="info">
+            <h5>Fitfut</h5>
+            <address>
+              Jalan Ir. Soekarno 45 Bandung
+            </address>
+          </div>
+          <div class="menu-footer">
+            <ul>
+              <li><h5>Informasi</h5></li>
+              <li> <a href="#" >Kebijakan Privasi</a></li>
+              <li> <a href="#" target="_self">Syarat dan Ketentuan</a></li>      
+           </ul>
+          </div>
+          <div class="copyright">
+            <img src="./assets/img/logo.png" alt="logo">
+            <p>&copy; 2024 Fitfut | Andalan Restoran Keluarga Indonesia </p>
+            <img src="./assets/img/instagram.svg" alt="" class="sosmed">
+            <img src="./assets/img/facebook.svg" alt="" class="sosmed">
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>
