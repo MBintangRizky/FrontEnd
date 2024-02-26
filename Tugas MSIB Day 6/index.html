@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>WellShoes</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top">
+        <div class="container">
+        
+          <h3><i class="fa-solid fa-shoe-prints text-light mr-2"></i></h3>
+          <a class="navbar-brand" href="#">WellShoes</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-4">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Reseller</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Hubungi Kami</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Bantuan</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+            <div class="icon mt-2">
+                <h5>
+                    <i class="fa-solid fa-cart-plus text-light ml-3 mr-3"></i>
+                    <i class="fa-solid fa-envelope text-light mr-3"></i>
+                    <i class="fa-solid fa-bell text-light mr-3"></i>
+                </h5>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row mt-5 no-gutters">
+        <div class="col-md-2 bg-light">
+            <ul class="list-group list-grup-flush p-2 pt-4">
+                <li class="list-group-item bg-danger"><i class="fas fa-list"></i>KATEGORI</li>
+                <li class="list-group-item"><i class="fas fa-angle-right"></i>Shoes Running</li>
+                <li class="list-group-item"><i class="fas fa-angle-right"></i>Shoes School</li>
+                <li class="list-group-item"><i class="fas fa-angle-right"></i>Shoes Women</li>
+                <li class="list-group-item"><i class="fas fa-angle-right"></i>Shoes Man</li>
+              </ul>
+        </div>
+        <div class="col-md-10">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/img/slide/slide1.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/slide/slide2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/slide/slide3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <h4 class="text-center font-weight-bold m-4">PRODUK TERBARU</h4>
+
+              <div class="row mx-auto">
+                <div class="card mr-2 ml-2" style="width: 16rem;">
+                    <img src="assets/img/produk/sepatu-lari.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-light">
+                      <h5 class="card-title">Nike Zoom Alphafly</h5>
+                      <p class="card-text">Sepatu Running free ongkir</p>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star-half-alt text-success"></i>
+                      <i class="far fa-star text-success"></i><br>
+                      <a href="#" class="btn btn-warning">Rp. 3.569.000</a>
+                      <a href="#" class="btn btn-success" data-bs-target="#produk1" data-bs-toggle="modal">BUY</a>
+                    </div>
+                  </div>
+                <div class="card mr-2 ml-2" style="width: 16rem;">
+                    <img src="assets/img/produk/sepatu-basket.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-light">
+                      <h5 class="card-title">Jordan 1 BW</h5>
+                      <p class="card-text">Sepatu Basket free ongkir</p>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="far fa-star text-success"></i><br>
+                      <a href="#" class="btn btn-warning">Rp. 2.499.000</a>
+                      <a href="#" class="btn btn-success">BUY</a>
+                    </div>
+                  </div>
+                <div class="card mr-2 ml-2" style="width: 16rem;">
+                    <img src="assets/img/produk/sepatu-gunung.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-light">
+                      <h5 class="card-title">Salomon Xt-6 GTX</h5>
+                      <p class="card-text">Sepatu Hiking free ongkir</p>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star-half-alt text-success"></i>
+                      <i class="far fa-star text-success"></i><br>
+                      <a href="#" class="btn btn-warning">Rp. 4.499.000</a>
+                      <a href="#" class="btn btn-success">BUY</a>
+                    </div>
+                  </div>
+                <div class="card mr-2 ml-2" style="width: 16rem;">
+                    <img src="assets/img/produk/sepatu-wanita.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-light">
+                      <h5 class="card-title">Skechers Women</h5>
+                      <p class="card-text">Sepatu Casual Wanita free ongkir</p>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star-half-alt text-success"></i>
+                      <i class="far fa-star text-success"></i><br>
+                      <a href="#" class="btn btn-warning">Rp. 450.000</a>
+                      <a href="#" class="btn btn-success">BUY</a>
+                    </div>
+                  </div>
+              <div class="row mx-auto mt-5">
+                <div class="card mr-2 ml-2" style="width: 16rem;">
+                    <img src="assets/img/produk/sepatu-sekolah.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-light">
+                      <h5 class="card-title">Converse Chuck 70s</h5>
+                      <p class="card-text">Sepatu Sekolah free ongkir</p>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star-half-alt text-success"></i>
+                      <i class="far fa-star text-success"></i>
+                      <i class="far fa-star text-success"></i><br>
+                      <a href="#" class="btn btn-warning">Rp. 1.799.000</a>
+                      <a href="#" class="btn btn-success">BUY</a>
+                    </div>
+                  </div>
+                <div class="card mr-2 ml-2" style="width: 16rem;">
+                    <img src="assets/img/produk/sepatu-skateboard.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-light">
+                      <h5 class="card-title">Vans Old Skool</h5>
+                      <p class="card-text">Sepatu Skateboard</p>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star-half-alt text-success"></i>
+                      <i class="far fa-star text-success"></i><br>
+                      <a href="#" class="btn btn-warning">Rp. 1.009.000</a>
+                      <a href="#" class="btn btn-success">BUY</a>
+                    </div>
+                  </div>
+                <div class="card mr-2 ml-2" style="width: 16rem;">
+                    <img src="assets/img/produk/sepatu-formal.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-light">
+                      <h5 class="card-title">Dr.Martens</h5>
+                      <p class="card-text">Sepatu Formal free ongkir</p>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star-half-alt text-success"></i><br>
+                      <a href="#" class="btn btn-warning">Rp. 3.999.000</a>
+                      <a href="#" class="btn btn-success">BUY</a>
+                    </div>
+                  </div>
+                <div class="card mr-2 ml-2" style="width: 16rem;">
+                    <img src="assets/img/produk/sepatu-badminton.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-light">
+                      <h5 class="card-title">Yonex 65 X2</h5>
+                      <p class="card-text">Sepatu Badminton</p>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star text-success"></i>
+                      <i class="fas fa-star-half-alt text-success"></i>
+                      <i class="far fa-star text-success"></i>
+                      <i class="far fa-star text-success"></i><br>
+                      <a href="#" class="btn btn-warning">Rp. 1.469.000</a>
+                      <a href="#" class="btn btn-success">BUY</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="modal fade" id="produk1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="assets/img/produk/sepatu-lari.png"
+                        </div>
+                        <div class="col-md-6">
+                          <table class="table table-borderless">
+                            <tr>
+                              <th>Jumlah Produk:</th>
+                              <td>5 Pcs</td>
+                            </tr>
+                            <tr>
+                              <th>Size Produk:</th>
+                              <td>40, 41, 43, 45</td>
+                            </tr>
+                            <tr>
+                              <th>Biaya Ongkir:</th>
+                              <td>Standar</td>
+                            </tr>
+                            <tr>
+                              <th>Rating Produk:</th>
+                              <td>
+                                <i class="fas fa-star text-success"></i>
+                                <i class="fas fa-star text-success"></i>
+                                <i class="fas fa-star text-success"></i>
+                                <i class="fas fa-star-half-alt text-success"></i>
+                                <i class="far fa-star text-success"></i><br>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-warning" data-bs-dismiss="modal">KEMBALI</button>
+                      <button type="button" class="btn btn-success">BUY</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+
+      <footer class="bg-dark text-white p-5">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>LAYANAN PELANGGAN</h5>
+            <ul>
+              <li>Pusat Bantuan</li>
+              <li>Cara Pembelian</li>
+              <li>Pengiriman</li>
+              <li>Cara Pengembalian</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>TENTANG KAMI</h5>
+            <p>Sepatu adalah salah satu jenis alas kaki (footwear) yang biasanya terdiri atas bagian-bagian sol, hak, kap, tali, dan lidah.</p>
+          </div>
+          <div class="col-md-3">
+            <h5>MITRA KERJASAMA</h5>
+            <ul>
+              <li>Sicepat</li>
+              <li>Ninja express</li>
+              <li>JNE</li>
+              <li>JNT</li>
+              <li>TIKI</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>HUBUNGI KAMI</h5>
+            <ul>
+              <li>081-3165-2203</li>
+              <li>Customer@WellShoes.com</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <div class="Copyright text-center text-white font-weight-bold bg-danger p-4">
+        <p>Developed by Muhammad Bintang Rizky Copyright<i class="far fa-copyright"></i></p>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
