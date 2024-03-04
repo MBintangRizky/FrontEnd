@@ -1,0 +1,35 @@
+<html>
+<head>
+  <script>
+    function faktorial(n) {
+      if (n === 0 || n === 1) {
+        return 1;
+      }
+      else {
+        return n * faktorial(n - 1);
+      }
+    }
+
+    function tampilkanHasil() {
+      var bilangan = parseInt(document.getElementById("bilangan").value);
+
+      if (bilangan >= 0) {
+        var hasil = faktorial(bilangan);
+        document.getElementById("hasil").innerHTML = "Faktorial dari " + bilangan + " adalah " + hasil;
+      }
+      else {
+        document.getElementById("hasil").innerHTML = "Bilangan harus positif";
+      }
+    }
+  </script>
+</head>
+<body>
+  <center>
+    <h1>Menghitung Faktorial</h1>
+    <p>Masukan Angka Bilangan:</p>
+    <input type="number" id="bilangan">
+    <button onclick="tampilkanHasil()">Hitung</button>
+    <p id="hasil"></p>
+  </center>
+</body>
+</html>
