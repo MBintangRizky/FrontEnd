@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Metode Array dan Arrow Function</title>
+</head>
+<body>
+    <h1>Demo JavaScript</h1>
+    <p id="demo"></p>
+
+    <script>
+        let buah = ['Apel', 'Jeruk', 'Mangga'];
+
+        let listBuah = buah.map((item, index) => {
+            return item.toUpperCase();
+        });
+
+        let text = listBuah.join(", ");
+        let message = text.length > 0 ? `Daftar Buah: ${text}` : 'Tidak ada buah';
+
+        document.getElementById('demo').innerHTML = message;
+    </script>
+</body>
+</html>
