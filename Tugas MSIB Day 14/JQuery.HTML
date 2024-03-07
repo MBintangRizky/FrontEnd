@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulasi DOM dengan jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Manipulasi DOM dengan jQuery</h1>
+    <p id="paragraf">Ini adalah paragraf yang akan dimanipulasi.</p>
+    <button id="ubahWarna">Ubah Warna Paragraf</button>
+    <button id="tambahItem">Tambah Item List</button>
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <script>
+        $('#ubahWarna').on('click', function() {
+            $('#paragraf').css('color', 'blue');
+        });
+
+        $('#tambahItem').on('click', function() {
+            $('#list').append('<li>Item baru</li>');
+        });
+    </script>
+</body>
+</html>
