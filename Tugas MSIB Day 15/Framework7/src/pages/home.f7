@@ -1,0 +1,103 @@
+<template>
+  <div class="page home-page">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner">
+        <div class="title">Home</div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="block">
+        <p>Welcome, <span id="usernamePlaceholder">User</span>!</p>
+      </div>
+      <div class="list accordion-list">
+        <ul id="notesList" class="accordion-list">
+          <li class="accordion-item">
+            <a href="#" class="item-content item-link">
+              <div class="item-inner">
+                <div class="item-title">Loading...</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Loading...</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  import { onAuthStateChanged } from "firebase/auth";
+  import { getAuth } from "firebase/auth";
+  import { getFirestore, collection, getDocs } from "firebase/firestore";
+
+  const auth = getAuth();
+  const firestore = getFirestore();
+
+  export default (props, { $, $on, $f7 }) => {
+    $on("pageInit", async () => {
+      onAuthStateChanged(auth, async (user) => {
+        if (user) {
+          $("#usernamePlaceholder").text(user.email);
+
+          const notesList = $("#notesList");
+
+          notesList.html(`
+            <li class="accordion-item">
+              <a href="#" class="item-content item-link">
+                <div class="item-inner">
+                  <div class="item-title">Loading...</div>
+                </div>
+              </a>
+              <div class="accordion-item-content">
+                <div class="block">
+                  <p>Loading...</p>
+                </div>
+              </div>
+            </li>
+          `);
+
+          try {
+            const notesCollection = collection(firestore, "notes");
+            const notesSnapshot = await getDocs(notesCollection);
+
+            notesList.empty();
+
+            notesSnapshot.forEach((doc) => {
+              const note = doc.data();
+
+              const accordionItem = `
+                <li class="accordion-item">
+                  <a href="#" class="item-content item-link">
+                    <div class="item-inner">
+                      <div class="item-title">${note.judul}</div>
+                    </div>
+                  </a>
+                  <div class="accordion-item-content">
+                    <div class="block">
+                      <p>${note.deskripsi}</p>
+                    </div>
+                  </div>
+                </li>
+              `;
+
+              notesList.append(accordionItem);
+            });
+
+            $f7Accordion.create(".accordion-list");
+          } catch (error) {
+            console.error("Error fetching notes:", error.message);
+          }
+        } else {
+          $f7.views.main.router.navigate("/login/");
+        }
+      });
+    });
+
+    return $render;
+  };
+</script>
