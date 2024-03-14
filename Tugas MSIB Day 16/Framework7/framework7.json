@@ -1,0 +1,18 @@
+{
+  "cwd": "C:\\Documents\\Framework7",
+  "type": [
+    "pwa"
+  ],
+  "name": "F7 Auth",
+  "framework": "core",
+  "template": "blank",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkMode": false,
+    "iconFonts": true
+  },
+  "customBuild": false
+}

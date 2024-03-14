@@ -1,0 +1,34 @@
+// Import necessary modules
+import Framework7 from 'framework7/bundle';
+import 'framework7/css/bundle';
+import '../css/icons.css';
+import '../css/app.css';
+
+// Import Routes
+import routes from './routes.js';
+// Import Store
+import store from './store.js';
+
+// Import main app component
+import App from '../app.f7';
+
+// Create a new Framework7 app instance
+const app = new Framework7({
+  name: 'F7 Auth', // App name
+  theme: 'auto', // Automatic theme detection
+
+  el: '#app', // App root element
+  component: App, // App main component
+  // App store
+  store,
+  // App routes
+  routes,
+
+  // Register service worker (only on production build)
+  serviceWorker: process.env.NODE_ENV === 'production' ? {
+    path: '/service-worker.js',
+  } : {},
+});
+
+// Initialize the app
+app.init();
