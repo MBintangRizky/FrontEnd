@@ -1,0 +1,227 @@
+/* Navbar Start */
+.header-homespot {
+  background-color: #d9d9d9;
+}
+
+/* Navbar End */
+
+/* Profile Start */
+.card-header-profile-homespot {
+  background-color: #ffffff;
+  margin-bottom: 12px;
+}
+.list-group-item-homespot {
+  padding: 4px 8px;
+  border: none;
+}
+.text-profile-desc-homespot {
+  color: #aca5a5 !important;
+}
+
+.icon-profile-homespot {
+  min-width: 28px;
+}
+
+.menu-profile-homespot {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menu-profile-homespot.active {
+  background-color: #b8edfe;
+  color: #4979d1;
+}
+/* Profile End */
+
+/* Main Start */
+/* Hero Start */
+
+.icon-home-homespot {
+  color: #4c90f8;
+}
+#hero-homespot {
+  background-image: url("/assets/img/home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* Hero End */
+.input-group-home-homespot {
+  background-color: black !important;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.input-home-homespot {
+  background-color: #ffffff !important;
+  border-color: #d9d9d9 !important;
+}
+.btn-tipe-home-homespot {
+  background-color: #ffffff !important;
+  border-left: 1px solid #aca5a5 !important;
+  border-right: 1px solid #d9d9d9 !important;
+  border-top: 1px solid #d9d9d9 !important;
+  border-bottom: 1px solid #d9d9d9 !important;
+  font-size: 12px !important;
+  border-top-right-radius: 10% !important;
+  border-bottom-right-radius: 10% !important;
+  color: #aca5a5 !important;
+}
+
+.btn-cari-home-homespot {
+  background-color: #ffffff !important;
+  border-color: #d9d9d9 !important;
+  margin-left: 20px !important;
+  border-radius: 15% !important;
+  color: #aca5a5 !important;
+  padding: 10px 20px !important;
+}
+
+.container-card-top-homespot {
+  background-color: #eaeeff;
+  left: -5px;
+  z-index: -1;
+  width: 38% !important;
+  height: 50% !important;
+  border-radius: 25px;
+}
+
+.container-kota-homespot {
+  background-color: #eaeeff;
+  right: 50px;
+  z-index: -1;
+  width: 60% !important;
+  height: 30% !important;
+  border-radius: 25px;
+}
+
+.container-calculator-homespot {
+  background-color: #fedecd;
+  border-radius: 25px;
+}
+
+.container-footer {
+  background-color: #3896da !important;
+}
+
+.container-image-footer {
+  height: 120px;
+}
+
+/* Homespot Carousel Section Start */
+/* Carousel Berita and Responsive Start */
+/* Card Start */
+.card-title-homespot {
+  min-height: 3rem;
+}
+
+.card-harga {
+  font-size: 16px;
+  color: #4c90f8;
+}
+
+.carousel-homespot .carousel-inner-homespot .carousel-item.active,
+.carousel-homespot .carousel-inner-homespot .carousel-item-next,
+.carousel-homespot .carousel-inner-homespot .carousel-item-prev {
+  display: flex;
+}
+
+/* @media (min-width: 1400px) {
+  .carousel-homespot .carousel-inner-homespot .carousel-item-end.active,
+  .carousel-homespot .carousel-inner-homespot .carousel-item-next {
+    transform: translateX(25%);
+  }
+  .carousel-homespot .carousel-inner-homespot .carousel-item-start.active,
+  .carousel-homespot .carousel-inner-homespot .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+} */
+/* 
+.carousel-homespot .carousel-inner-homespot .carousel-item-start,
+.carousel-homespot .carousel-inner-homespot .carousel-item-end {
+  transform: translateX(0);
+}
+
+.carousel-homespot .carousel-inner-homespot .carousel-item-start,
+.carousel-homespot .carousel-inner-homespot .carousel-item-end {
+  transform: translateX(0);
+} */
+
+.carousel-inner-homespot {
+  overflow: unset !important;
+}
+
+.card-homespot {
+  transition: 0.25s ease-in-out;
+  background-image: url("/assets/img/bandung.png");
+  overflow: hidden;
+}
+
+.card-homespot:hover {
+  scale: 1.025;
+}
+
+.card-homespot .card-deskripsi-homespot {
+  min-height: 2rem;
+  font-size: 12px;
+}
+
+.card-homespot-kota {
+  transition: 0.25s ease-in-out;
+  background-image: url("/assets/img/bandung.png");
+  overflow: hidden;
+}
+
+.card-homespot-kota p {
+  font-size: 12px;
+}
+
+.card-homespot-kota:hover {
+  scale: 1.05;
+}
+
+.card-homespot-kota .card-body {
+  padding: 0rem;
+}
+
+.news_authorinfo .author-info {
+  font-size: 13px;
+}
+
+.image-thumbnail-homespot {
+  max-height: 120px;
+  overflow: hidden;
+}
+
+.text-card-homespot {
+  font-size: 12px !important;
+}
+/* Card End */
+
+.carousel-homespot .carousel-control-prev,
+.carousel-homespot .carousel-control-next {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  position: absolute;
+  background-color: #7ba7d7;
+  text-shadow: none;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-homespot .carousel-control-prev span,
+.carousel-homespot .carousel-control-next span {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.carousel-homespot .carousel-control-prev-icon-homespot-card {
+  left: -40px;
+}
+
+.carousel-homespot .carousel-control-next-icon-homespot-card {
+  right: -40px;
+}
+
+/* Homespot Carousel Section End */
