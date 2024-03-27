@@ -1,0 +1,110 @@
+<template>
+  <div class="page">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner sliding">
+        <div class="title">Riwayat</div>
+      </div>
+    </div>
+
+    <div class="toolbar toolbar-bottom tabbar tabbar-icons">
+      <div class="toolbar-inner">
+        <a href="/index/" class="tab-link">
+          <i class="icon f7-icons if-not-md">house_fill</i>
+          <i class="icon material-icons md-only"
+            >house<span class="badge color-green">5</span></i
+          >
+          <span class="tabbar-label">Beranda</span>
+        </a>
+        <a href="/history/" class="tab-link tab-link-active">
+          <i class="icon f7-icons if-not-md"
+            >clock_fill<span class="badge color-red">2</span></i
+          >
+          <i class="icon material-icons md-only"
+            >clock_fill<span class="badge color-red">2</span></i
+          >
+          <span class="tabbar-label">Riwayat</span>
+        </a>
+        <a href="/profile/" class="tab-link">
+          <i class="icon f7-icons if-not-md">person_fill</i>
+          <i class="icon material-icons md-only">person</i>
+          <span class="tabbar-label">Profil</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="block">
+        <p>Berikut adalah rincian pengeluaran dan pemasukan Anda:</p>
+      </div>
+      <div class="list list-outline-ios list-strong-ios list-dividers-ios">
+        <ul>
+          <li>
+            <a class="item-link item-content">
+              <div class="item-media">
+                <i class="icon f7-icons" style="display: block; color: green"
+                  >arrow_down_right</i
+                >
+              </div>
+              <div class="item-inner">
+                <div class="item-title">
+                  <div class="item-header" style="color: green">
+                    +Rp1.500.0000
+                  </div>
+                  Uang Bulanan
+                </div>
+                <div class="item-after">Lihat</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link item-content">
+              <div class="item-media">
+                <i class="icon f7-icons" style="display: block; color: green"
+                  >arrow_down_right</i
+                >
+              </div>
+              <div class="item-inner">
+                <div class="item-title">
+                  <div class="item-header" style="color: green">+Rp50.0000</div>
+                  Hutang Si Siska
+                </div>
+                <div class="item-after">Lihat</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link item-content">
+              <div class="item-media">
+                <i class="icon f7-icons" style="display: block; color: red"
+                  >arrow_up_left</i
+                >
+              </div>
+              <div class="item-inner">
+                <div class="item-title">
+                  <div class="item-header" style="color: red">-Rp850.0000</div>
+                  Bayar Kos
+                </div>
+                <div class="item-after">Lihat</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="fab fab-extended fab-right-bottom">
+        <a>
+          <i class="icon f7-icons if-not-md">plus</i>
+          <i class="icon material-icons md-only">add</i>
+          <div class="fab-text">Tambah</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default (props, { $update, $f7 }) => {
+    return $render;
+  };
+</script>

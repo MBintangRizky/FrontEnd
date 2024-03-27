@@ -1,0 +1,116 @@
+<template>
+  <div class="page login-page">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner">
+        <div class="title">L O G I N</div>
+      </div>
+    </div>
+    <div class="page-content login-screen-content">
+      <div class="login-form">
+        <form
+          class="list list-strong-ios list-dividers-ios list-outline-ios"
+          id="login-form"
+        >
+          <ul>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Email</div>
+                  <div class="item-input-wrap">
+                    <input type="email" name="email" placeholder="Your Email" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Password</div>
+                  <div class="item-input-wrap">
+                    <input
+                      type="password"
+                      name="password"
+                      placeholder="Your password"
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </form>
+        <div class="block block-strong">
+          <a class="button button-large button-fill" href="/index/">Login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  // import { initializeApp } from "firebase/app";
+  // import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+
+  // const firebaseConfig = {
+  //   apiKey: "AIzaSyDDVMu2PeSDI-uzMYNGo9mZS2ivHzoAioE",
+  //   authDomain: "f7-test-70414.web.app",
+  //   projectId: "f7-test-70414",
+  //   // Add other Firebase config properties
+  // };
+
+  // const app = initializeApp(firebaseConfig);
+  // const auth = getAuth(app);
+
+  export default (props, { $, $on, $f7 }) => {
+    // $on("pageInit", () => {
+    //   // Initially hide the preloader
+    //   $(".preloader-wrapper").hide();
+
+    //   $(".login-button").on("click", async function () {
+    //     const email = $("#login-form input[name='email']").val();
+    //     const password = $("#login-form input[name='password']").val();
+
+    //     $(".preloader-wrapper").show();
+
+    //     try {
+    //       const userCredential = await signInWithEmailAndPassword(
+    //         auth,
+    //         email,
+    //         password
+    //       );
+    //       const user = userCredential.user;
+
+    //       console.log("Berhasil login");
+
+    //       $f7.views.main.router.navigate("/home/");
+    //     } catch (error) {
+    //       console.error("Login error:", error.message);
+    //       alert("Gagal masuk");
+    //     } finally {
+    //       $(".preloader-wrapper").hide();
+    //     }
+    //   });
+    // });
+
+    return $render;
+  };
+</script>
+
+<style>
+  .login-screen-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* .login-form {
+    max-width: 400px;
+    width: 100%;
+  } */
+  /* 
+  .login-button {
+    display: block;
+    margin: 16px auto;
+  } */
+</style>

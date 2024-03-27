@@ -1,0 +1,58 @@
+<template>
+  <div class="page page-init">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner sliding">
+        <div class="title">Selamat Datang</div>
+      </div>
+    </div>
+    <div class="page-content to-center">
+      <div class="logo-container">
+        <img src="../assets/image/wallet.png" alt="App Logo" />
+        <div class="app-name">UangKu</div>
+      </div>
+
+      <div class="block">
+        <a class="button button-raised button-large button-fill" href="/login/"
+          >Masuk</a
+        >
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default (props, { $f7 }) => {
+    return $render;
+  };
+</script>
+
+<style>
+  .page-init .page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .logo-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .logo-container img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .app-name {
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+
+  .button {
+    width: 18em;
+  }
+</style>

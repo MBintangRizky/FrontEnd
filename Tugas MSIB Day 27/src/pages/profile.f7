@@ -1,0 +1,164 @@
+<template>
+  <div class="page">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner sliding">
+        <div class="title">Profil Saya</div>
+      </div>
+    </div>
+
+    <div class="toolbar toolbar-bottom tabbar tabbar-icons">
+      <div class="toolbar-inner">
+        <a href="/index/" class="tab-link">
+          <i class="icon f7-icons if-not-md">house_fill</i>
+          <i class="icon material-icons md-only"
+            >house<span class="badge color-green">5</span></i
+          >
+          <span class="tabbar-label">Beranda</span>
+        </a>
+        <a href="/history/" class="tab-link">
+          <i class="icon f7-icons if-not-md"
+            >clock_fill<span class="badge color-red">2</span></i
+          >
+          <i class="icon material-icons md-only"
+            >clock_fill<span class="badge color-red">2</span></i
+          >
+          <span class="tabbar-label">Riwayat</span>
+        </a>
+        <a href="/profile/" class="tab-link tab-link-active">
+          <i class="icon f7-icons if-not-md">person_fill</i>
+          <i class="icon material-icons md-only">person</i>
+          <span class="tabbar-label">Profil</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div style="display: flex; flex-direction: column; align-items: center; margin: 1em 0 0 0;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <img
+            src="../assets/image/profile.jpg"
+            alt=""
+            srcset=""
+            style="border-radius: 50%; width: 150px; height: 150px;"
+          />
+          <div style="margin-top: 0.5em; text-align: center;">
+            <h3 style="margin: 0;">M. Bintang Rizky</h3>
+            <div style="display: flex; align-items: center; justify-content: center;">
+              <p style="margin: 0;">Bintang</p>
+              <i style="margin-left: .2em; font-size: 20px; color: rgb(108, 217, 108);" class="icon f7-icons if-not-md">pencil</i>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      <div class="list list-strong list-outline-ios list-dividers-ios">
+        <ul>
+         
+         <li>
+            <a class="item-content item-link ${selected === 'profile' ? 'item-selected' : ''}" @click=${()=>
+              setItem('profile')}
+              >
+              <div class="item-media">
+                <i class="icon material-icons if-md">person</i>
+                <i class="icon f7-icons if-not-md">person_fill</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title">Profil</div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="item-content item-link ${selected === 'home' ? 'item-selected' : ''}" @click=${()=>
+              setItem('home')}
+              >
+              <div class="item-media">
+                <i class="icon material-icons if-md">lock_fill</i>
+                <i class="icon f7-icons if-not-md">lock_fill</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title">Ubah Password</div>
+              </div>
+            </a>
+          </li>
+
+          <!-- <li>
+            <a class="item-content item-link ${selected === 'settings' ? 'item-selected' : ''}" @click=${()=>
+              setItem('settings')}
+              >
+              <div class="item-media">
+                <i class="icon material-icons if-md">settings</i>
+                <i class="icon f7-icons if-not-md">gear_alt_fill</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title">Pengaturan</div>
+              </div>
+            </a>
+          </li> -->
+
+          <li>
+            <label class="item-content">
+              <div class="item-media">
+                <i class="icon material-icons if-md">moon_fill</i>
+                <i class="icon f7-icons if-not-md">moon_fill</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title">Mode Gelap</div>
+                <div class="item-after">
+                  <div class="toggle toggle-init">
+                    <input type="checkbox" />
+                    <span class="toggle-icon"></span>
+                  </div>
+                </div>
+              </div>
+            </label>
+          </li>
+
+          <li>
+            <a class="item-content item-link ${selected === 'settings' ? 'item-selected' : ''}" @click=${()=>
+              setItem('settings')}
+              >
+              <div class="item-media">
+                <i class="icon material-icons if-md">square_arrow_left_fill</i>
+                <i class="icon f7-icons if-not-md">square_arrow_left_fill</i>
+              </div>
+              <div class="item-inner" @click="${openConfirm}">
+                <div class="item-title">
+                  Keluar
+                </div>
+              </div>
+            </a>
+          </li>
+
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+  export default (props, { $update, $f7 }) => {
+    let selected = "home";
+    let selectedMedia = "home";
+
+    const setItem = (newItem) => {
+      selected = newItem;
+      $update();
+    };
+    const setItemMedia = (newItem) => {
+      selectedMedia = newItem;
+      $update();
+    };
+
+    const openConfirm = () => {
+      $f7.dialog.confirm("Apakah Anda yakin untuk keluar?", function () {
+        $f7.dialog.alert("Great!");
+      });
+    };
+
+    return $render;
+  };
+</script>

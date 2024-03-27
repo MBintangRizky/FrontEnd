@@ -1,0 +1,180 @@
+<template>
+  <div class="page">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner sliding">
+        <div class="title">Beranda</div>
+      </div>
+    </div>
+
+    <div class="toolbar toolbar-bottom tabbar tabbar-icons">
+      <div class="toolbar-inner">
+        <a href="/index/" class="tab-link tab-link-active">
+          <i class="icon f7-icons if-not-md">house_fill</i>
+          <i class="icon material-icons md-only"
+            >house<span class="badge color-green">5</span></i
+          >
+          <span class="tabbar-label">Beranda</span>
+        </a>
+        <a href="/history/" class="tab-link">
+          <i class="icon f7-icons if-not-md"
+            >clock_fill<span class="badge color-red">2</span></i
+          >
+          <i class="icon material-icons md-only"
+            >clock_fill<span class="badge color-red">2</span></i
+          >
+          <span class="tabbar-label">Riwayat</span>
+        </a>
+        <a href="/profile/" class="tab-link">
+          <i class="icon f7-icons if-not-md">person_fill</i>
+          <i class="icon material-icons md-only">person</i>
+          <span class="tabbar-label">Profil</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="block">
+        <div class="grid grid-cols-2 grid-gap">
+          <div class="text-left">
+            <p style="margin: 0">Selamat Datang,</p>
+            <span>
+              <h3 style="margin: 0">Bintang</h3>
+            </span>
+          </div>
+          <div class="text-right icon-right-align">
+            <a href="/profile/" class="">
+              <img
+                src="../assets/image/profile.jpg"
+                alt="Profile Image"
+                srcset=""
+                style="border-radius: 50%; width: 50px; height: 50px"
+              />
+            </a>
+          </div>
+        </div>
+
+        <h3>Ringkasan Bulan Ini</h3>
+        <div class="grid grid-cols-2 resume-container">
+          <div class="resume-item">
+            <h4>
+              <i class="icon f7-icons">arrow_right_circle_fill</i> Pemasukan
+            </h4>
+            <div>
+              <p style="color: green">Rp10.000</p>
+            </div>
+          </div>
+          <div class="resume-item">
+            <h4>
+              <i class="icon f7-icons">arrow_left_circle_fill</i> Pengeluaran
+            </h4>
+            <div>
+              <p style="color: red">Rp100.000</p>
+            </div>
+          </div>
+        </div>
+
+        <h3>Menu Utama</h3>
+        <div class="grid grid-cols-2">
+          <div class="card card-outline-md demo-card-header-pic">
+            <div
+              style="
+                background-image: url(https://cdn.framework7.io/placeholder/nature-1000x600-3.jpg);
+              "
+              valign="bottom"
+              class="card-header"
+            ></div>
+            <div class="card-content card-content-padding">
+              <p>Quisque eget vestibulum nulla...</p>
+            </div>
+            <div class="card-footer">
+              <a class="link">Pilih</a>
+            </div>
+          </div>
+
+          <div class="card card-outline-md demo-card-header-pic">
+            <div
+              style="
+                background-image: url(https://cdn.framework7.io/placeholder/nature-1000x600-3.jpg);
+              "
+              valign="bottom"
+              class="card-header"
+            ></div>
+            <div class="card-content card-content-padding">
+              <p>Quisque eget vestibulum nulla...</p>
+            </div>
+            <div class="card-footer">
+              <a class="link">Pilih</a>
+            </div>
+          </div>
+
+          <div class="card card-outline-md demo-card-header-pic">
+            <div
+              style="
+                background-image: url(https://cdn.framework7.io/placeholder/nature-1000x600-3.jpg);
+              "
+              valign="bottom"
+              class="card-header"
+            ></div>
+            <div class="card-content card-content-padding">
+              <p>Quisque eget vestibulum nulla...</p>
+            </div>
+            <div class="card-footer">
+              <a class="link">Pilih</a>
+            </div>
+          </div>
+
+          <div class="card card-outline-md demo-card-header-pic">
+            <div
+              style="
+                background-image: url(https://cdn.framework7.io/placeholder/nature-1000x600-3.jpg);
+              "
+              valign="bottom"
+              class="card-header"
+            ></div>
+            <div class="card-content card-content-padding">
+              <p>Quisque eget vestibulum nulla...</p>
+            </div>
+            <div class="card-footer">
+              <a class="link">Pilih</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+  export default (props, { $f7 }) => {
+    return $render;
+  };
+</script>
+
+<style>
+  .icon-right-align {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .resume-container {
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .resume-item {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .resume-item:not(:last-child) {
+    border-right: 1px solid black;
+  }
+
+  .resume-item h4 {
+    margin: 5px 0;
+  }
+</style>
