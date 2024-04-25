@@ -1,0 +1,103 @@
+/* ==================================================
+   Google Fonts
+================================================== */
+
+/* @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic,900,900italic"); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body
+{
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+	line-height: 32px;
+	font-weight: 300;
+	color: #666;
+	background: #FFF;
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+}
+
+#sustainable{
+    background-image: url('bg-conference.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(70%);
+}
+
+.partner-logo {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.partner-logo img {
+    max-width: 100%;
+}
+
+
+#hero {
+    background-image: url('./assets/image/hero.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#highlight {
+    background-image: url('./assets/image/highlight.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#speakers {
+    background-image: url('./assets/image/speaker.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#price-list {
+    background-image: url('./assets/image/pricelist.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#footer {
+    background-image: url('./assets/image/footer.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.separator {
+    border-top: 2px solid #ccc; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+
+@media (min-width: 375px) {
+    #venue iframe, #highlight iframe {
+        width: 100%; 
+    }
+}
+
+@media (min-width: 576px) {
+    #venue iframe, #highlight iframe {
+        width: 100%; 
+    }
+}
+
+@media (min-width: 768px) {
+    #venue iframe, #highlight iframe {
+        max-width: 100%; 
+    }
+}
+
+@media (min-width: 992px) {
+    #venue iframe, #highlight iframe {
+        max-width: 800px; 
+    }
+}
+
+@media (min-width: 1200px) {
+    #venue iframe, #highlight iframe {
+        max-width: 1000px; 
+    }
+}
+
+
