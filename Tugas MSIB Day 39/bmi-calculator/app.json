@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "bmi-app",
+    "slug": "bmi-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "bmi-app"
+}
