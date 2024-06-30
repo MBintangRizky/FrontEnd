@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins";
+}
+
+/* Tailwind CSS classes for toggle switch */
+input:checked ~ .block {
+  @apply bg-blue-600;
+}
+
+input:checked ~ .dot {
+  @apply transform translate-x-full bg-blue-600;
+}

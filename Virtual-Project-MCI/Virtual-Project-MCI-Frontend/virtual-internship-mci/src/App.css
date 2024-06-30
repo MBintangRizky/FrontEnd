@@ -1,0 +1,14 @@
+.bg-footer {
+  background: rgb(219,162,83);
+  background: -moz-linear-gradient(90deg, rgba(219,162,83,1) 0%, rgba(12,102,172,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(219,162,83,1) 0%, rgba(12,102,172,1) 100%);
+  background: linear-gradient(90deg, rgba(219,162,83,1) 0%, rgba(12,102,172,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dba253",endColorstr="#0c66ac",GradientType=1);
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Josefin+Sans'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  font-family: "Poppins", sans-serif;
+} */
